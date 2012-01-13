@@ -1,0 +1,95 @@
+{
+	"scope": "source.php - variable.other.php",
+
+	"completions":
+	[
+		/* KCONFIG */
+		{ "trigger": "KConfig::unbox", "contents": "KConfig::unbox(${1:data})" },
+
+		/* KCONTROLLER EXCEPTION */
+		{ "trigger": "KControllerException", "contents": "KControllerException(${1:message},${2:code})" },
+
+		/* KLOADER */
+		{ "trigger": "KLoader::loadIdentifier", "contents": "KLoader::loadIdentifier${1:identifier})" },
+
+		/* KINFLECTOR */
+		{ "trigger": "KInflector::addWord", "contents": "KInflector::addWord(${1:singular},${2:plural})" },
+		{ "trigger": "KInflector::camelize", "contents": "KInflector::camelize(${1:table})" },
+		{ "trigger": "KInflector::classify", "contents": "KInflector::classify(${1:table})" },
+		{ "trigger": "KInflector::explode", "contents": "KInflector::explode(${1:word})" },
+		{ "trigger": "KInflector::getPart", "contents": "KInflector::getPart(${1:string},${2:index})" },
+		{ "trigger": "KInflector::humanize", "contents": "KInflector::humanize(${1:word})" },
+		{ "trigger": "KInflector::implode", "contents": "KInflector::implode(${1:words})" },
+		{ "trigger": "KInflector::isPlural", "contents": "KInflector::isPlural(${1:string})" },
+		{ "trigger": "KInflector::isSingular", "contents": "KInflector::isSingular(${1:string})" },
+		{ "trigger": "KInflector::pluralize", "contents": "KInflector::pluralize(${1:word})" },
+		{ "trigger": "KInflector::singularize", "contents": "KInflector::singularize(${1:word})" },
+		{ "trigger": "KInflector::tableize", "contents": "KInflector::tableize(${1:class})" },
+		{ "trigger": "KInflector::underscore", "contents": "KInflector::underscore(${1:word})" },
+		{ "trigger": "KInflector::variablize", "contents": "KInflector::variablize(${1:string})" },
+
+		/* KHELPERARRAY */
+		{ "trigger": "KHelperArray::count", "contents": "KHelperArray::count(${1:array})" },
+		{ "trigger": "KHelperArray::merge", "contents": "KHelperArray::merge(${1:array1}, ${2:array2})" },
+		{ "trigger": "KHelperArray::getColumn", "contents": "KHelperArray::getColumn(${1:array})" },
+		{ "trigger": "KHelperArray::setType", "contents": "KHelperArray::setType(${1:array},${2:index})" },
+		{ "trigger": "KHelperArray::toString", "contents": "KHelperArray::toString(${1:array},${2:type})" },
+
+
+		/* KHTTP */
+		{ "trigger": "KHttpResponse::OK", "contents": "KHttpResponse::OK" },
+		{ "trigger": "KHttpResponse::CREATED", "contents": "KHttpResponse::CREATED" },
+		{ "trigger": "KHttpResponse::ACCEPTED", "contents": "KHttpResponse::ACCEPTED" },
+		{ "trigger": "KHttpResponse::NO_CONTENT", "contents": "KHttpResponse::NO_CONTENT" },
+		{ "trigger": "KHttpResponse::RESET_CONTENT", "contents": "KHttpResponse::RESET_CONTENT" },
+		{ "trigger": "KHttpResponse::PARTIAL_CONTENT", "contents": "KHttpResponse::PARTIAL_CONTENT" },
+		{ "trigger": "KHttpResponse::MOVED_PERMANENTLY", "contents": "KHttpResponse::MOVED_PERMANENTLY" },
+		{ "trigger": "KHttpResponse::FOUND", "contents": "KHttpResponse::FOUND" },
+		{ "trigger": "KHttpResponse::SEE_OTHER", "contents": "KHttpResponse::SEE_OTHER" },
+		{ "trigger": "KHttpResponse::NOT_MODIFIED", "contents": "KHttpResponse::NOT_MODIFIED" },
+		{ "trigger": "KHttpResponse::USE_PROXY", "contents": "KHttpResponse::USE_PROXY" },
+		{ "trigger": "KHttpResponse::TEMPORARY_REDIRECT", "contents": "KHttpResponse::TEMPORARY_REDIRECT" },
+		{ "trigger": "KHttpResponse::BAD_REQUEST", "contents": "KHttpResponse::BAD_REQUEST" },
+		{ "trigger": "KHttpResponse::UNAUTHORIZED", "contents": "KHttpResponse::UNAUTHORIZED" },
+		{ "trigger": "KHttpResponse::FORBIDDEN", "contents": "KHttpResponse::FORBIDDEN" },
+		{ "trigger": "KHttpResponse::NOT_FOUND", "contents": "KHttpResponse::NOT_FOUND" },
+		{ "trigger": "KHttpResponse::METHOD_NOT_ALLOWED", "contents": "KHttpResponse::METHOD_NOT_ALLOWED" },
+		{ "trigger": "KHttpResponse::NOT_ACCEPTABLE", "contents": "KHttpResponse::NOT_ACCEPTABLE" },
+		{ "trigger": "KHttpResponse::REQUEST_TIMEOUT", "contents": "KHttpResponse::REQUEST_TIMEOUT" },
+		{ "trigger": "KHttpResponse::CONFLICT", "contents": "KHttpResponse::CONFLICT" },
+		{ "trigger": "KHttpResponse::GONE", "contents": "KHttpResponse::GONE" },
+		{ "trigger": "KHttpResponse::LENGTH_REQUIRED", "contents": "KHttpResponse::LENGTH_REQUIRED" },
+		{ "trigger": "KHttpResponse::PRECONDITION_FAILED", "contents": "KHttpResponse::PRECONDITION_FAILED" },
+		{ "trigger": "KHttpResponse::REQUEST_ENTITY_TOO_LARGE", "contents": "KHttpResponse::REQUEST_ENTITY_TOO_LARGE" },
+		{ "trigger": "KHttpResponse::REQUEST_URI_TOO_LONG", "contents": "KHttpResponse::REQUEST_URI_TOO_LONG" },
+		{ "trigger": "KHttpResponse::UNSUPPORTED_MEDIA_TYPE", "contents": "KHttpResponse::UNSUPPORTED_MEDIA_TYPE" },
+		{ "trigger": "KHttpResponse::EXPECTATION_FAILED", "contents": "KHttpResponse::EXPECTATION_FAILED" },
+		{ "trigger": "KHttpResponse::INTERNAL_SERVER_ERROR", "contents": "KHttpResponse::INTERNAL_SERVER_ERROR" },
+		{ "trigger": "KHttpResponse::NOT_IMPLEMENTED", "contents": "KHttpResponse::NOT_IMPLEMENTED" },
+		{ "trigger": "KHttpResponse::SERVICE_UNAVAILABLE", "contents": "KHttpResponse::SERVICE_UNAVAILABLE" },
+		{ "trigger": "KHttpResponse::GATEWAY_TIMEOUT", "contents": "KHttpResponse::GATEWAY_TIMEOUT" },
+		{ "trigger": "KHttpResponse::getHeader", "contents": "KHttpResponse::getHeader(${1:code})" },
+		{ "trigger": "KHttpResponse::getMessage", "contents": "KHttpResponse::getMessage(${1:code})" },
+		{ "trigger": "KHttpResponse::isError", "contents": "KHttpResponse::isError(${1:code})" },
+
+		/* KREQUEST */
+		{ "trigger": "KRequest::set", "contents": "KService::set(${1:identifier}, ${2:value})" },
+		{ "trigger": "KRequest::get", "contents": "KRequest::get(${1:identifier}, ${2:filter})" },
+
+		/* KSERVICE */
+		{ "trigger": "KService::addMixin", "contents": "KService::addMixin(${1:identifier}, ${2:array()})" },
+		{ "trigger": "KService::get", "contents": "KService::get(${1:identifier})" },
+		{ "trigger": "KService::getAlias", "contents": "KService::getAlias(${1:alias})" },
+		{ "trigger": "KService::getIdentifier", "contents": "KService::getIdentifier(${1:identifier})" },
+		{ "trigger": "KService::getMixins", "contents": "KService::getMixins(${1:identifier})" },
+		{ "trigger": "KService::setAlias", "contents": "KService::setAlias(${1:alias}, ${2:identifier})" },
+
+		/* TEMPLATE VARS */
+		{ "trigger": "@template", "contents": "@template(${1:identifier})" },
+		{ "trigger": "@route", "contents": "@route(${1:link})" },
+		{ "trigger": "@helper", "contents": "@helper(${1:identifier})" },
+		{ "trigger": "@text", "contents": "@text(${1:identifier})" }
+
+
+	]
+}
