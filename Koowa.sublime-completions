@@ -3,14 +3,55 @@
 
 	"completions":
 	[
+		/* KCOMMAND */
+		{ "trigger": "KCommand::PRIORITY_HIGHEST", "contents": "KCommand::PRIORITY_HIGHEST" },
+		{ "trigger": "KCommand::PRIORITY_HIGH", "contents": "KCommand::PRIORITY_HIGH" },
+		{ "trigger": "KCommand::PRIORITY_NORMAL", "contents": "KCommand::PRIORITY_NORMAL" },
+		{ "trigger": "KCommand::PRIORITY_LOW", "contents": "KCommand::PRIORITY_LOW" },
+		{ "trigger": "KCommand::PRIORITY_LOWEST", "contents": "KCommand::PRIORITY_LOWEST" },
+		 
 		/* KCONFIG */
 		{ "trigger": "KConfig::unbox", "contents": "KConfig::unbox(${1:data})" },
+		{ "trigger": "KConfig", "contents": "KConfig()" },
 
-		/* KCONTROLLER EXCEPTION */
+		/* KCONTROLLEREXCEPTION */
 		{ "trigger": "KControllerException", "contents": "KControllerException(${1:message},${2:code})" },
 
+		/* KDatabase */
+		{ "trigger": "KDatabase::OPERATION_SELECT", "contents": "KDatabase::OPERATION_SELECT" },
+		{ "trigger": "KDatabase::OPERATION_INSERT", "contents": "KDatabase::OPERATION_INSERT" },
+		{ "trigger": "KDatabase::OPERATION_UPDATE", "contents": "KDatabase::OPERATION_UPDATE" },
+		{ "trigger": "KDatabase::OPERATION_DELETE", "contents": "KDatabase::OPERATION_DELETE" },
+		{ "trigger": "KDatabase::OPERATION_SHOW", "contents": "KDatabase::OPERATION_SHOW" },
+		{ "trigger": "KDatabase::RESULT_STORE", "contents": "KDatabase::RESULT_STORE" },
+		{ "trigger": "KDatabase::RESULT_USE", "contents": "KDatabase::RESULT_USE" },
+		{ "trigger": "KDatabase::FETCH_ROW", "contents": "KDatabase::FETCH_ROW" },
+		{ "trigger": "KDatabase::FETCH_ROWSET", "contents": "KDatabase::FETCH_ROWSET" },
+		{ "trigger": "KDatabase::FETCH_ARRAY", "contents": "KDatabase::FETCH_ARRAY" },
+		{ "trigger": "KDatabase::FETCH_ARRAY_LIST", "contents": "KDatabase::FETCH_ARRAY_LIST" },
+		{ "trigger": "KDatabase::FETCH_FIELD", "contents": "KDatabase::FETCH_FIELD" },
+		{ "trigger": "KDatabase::FETCH_FIELD_LIST", "contents": "KDatabase::FETCH_FIELD_LIST" },
+		{ "trigger": "KDatabase::FETCH_OBJECT", "contents": "KDatabase::FETCH_OBJECT" },
+		{ "trigger": "KDatabase::FETCH_OBJECT_LIST", "contents": "KDatabase::FETCH_OBJECT_LIST" },
+		{ "trigger": "KDatabase::STATUS_LOADED", "contents": "KDatabase::STATUS_LOADED" },
+		{ "trigger": "KDatabase::STATUS_DELETED", "contents": "KDatabase::STATUS_DELETED" },
+		{ "trigger": "KDatabase::STATUS_CREATED", "contents": "KDatabase::STATUS_CREATED" },
+		{ "trigger": "KDatabase::STATUS_UPDATED", "contents": "KDatabase::STATUS_UPDATED" },
+		{ "trigger": "KDatabase::STATUS_FAILED", "contents": "KDatabase::STATUS_FAILED" },
+
+		/* KDate */
+		{ "trigger": "KDate", "contents": "KDate()" },
+
+		/* KEVENT */
+		{ "trigger": "KEvent", "contents": "KEvent(${1:name},${2:array()})" },
+
+		/* KFILTERCHAIN */
+		{ "trigger": "KFilterChain", "contents": "KFilterChai()" },
+
 		/* KLOADER */
-		{ "trigger": "KLoader::loadIdentifier", "contents": "KLoader::loadIdentifier${1:identifier})" },
+		{ "trigger": "KLoader::loadIdentifier", "contents": "KLoader::loadIdentifier(${1:identifier})" },
+		{ "trigger": "KLoader::addAdapter", "contents": "KLoader::addAdapter(${1:adapter})" },
+		{ "trigger": "KLoader::getInstance", "contents": "KLoader::getInstance(${1:array()})" },
 
 		/* KINFLECTOR */
 		{ "trigger": "KInflector::addWord", "contents": "KInflector::addWord(${1:singular},${2:plural})" },
@@ -72,9 +113,28 @@
 		{ "trigger": "KHttpResponse::getMessage", "contents": "KHttpResponse::getMessage(${1:code})" },
 		{ "trigger": "KHttpResponse::isError", "contents": "KHttpResponse::isError(${1:code})" },
 
+		/* KOBJECT */
+		{ "trigger": "KObject", "contents": "KObject()" },
+
+		/* KOBJECTQUEUE */
+		{ "trigger": "KObjectQueue", "contents": "KObjectQueue()" },
+
+
 		/* KREQUEST */
-		{ "trigger": "KRequest::set", "contents": "KService::set(${1:identifier}, ${2:value})" },
+		{ "trigger": "KRequest::base", "contents": "KRequest::base()" },
+		{ "trigger": "KRequest::client", "contents": "KRequest::client()" },
+		{ "trigger": "KRequest::format", "contents": "KRequest::format()" },
 		{ "trigger": "KRequest::get", "contents": "KRequest::get(${1:identifier}, ${2:filter})" },
+		{ "trigger": "KRequest::getInstance", "contents": "KRequest::getInstance()" },
+		{ "trigger": "KRequest::has", "contents": "KRequest::has(${1:identifier})" },
+		{ "trigger": "KRequest::method", "contents": "KRequest::method()" },
+		{ "trigger": "KRequest::protocol", "contents": "KRequest::protocol()" },
+		{ "trigger": "KRequest::referrer", "contents": "KRequest::referrer()" },
+		{ "trigger": "KRequest::root", "contents": "KRequest::root()" },
+		{ "trigger": "KRequest::set", "contents": "KRequest::set(${1:identifier}, ${2:value})" },
+		{ "trigger": "KRequest::token", "contents": "KRequest::token()" },
+		{ "trigger": "KRequest::type", "contents": "KRequest::type()" },
+		{ "trigger": "KRequest::url", "contents": "KRequest::url()" },
 
 		/* KSERVICE */
 		{ "trigger": "KService::addMixin", "contents": "KService::addMixin(${1:identifier}, ${2:array()})" },
@@ -84,7 +144,23 @@
 		{ "trigger": "KService::getMixins", "contents": "KService::getMixins(${1:identifier})" },
 		{ "trigger": "KService::setAlias", "contents": "KService::setAlias(${1:alias}, ${2:identifier})" },
 
+		/* KSERVICEIDENTIFIER */
+		{ "trigger": "KServiceIdentifier", "contents": "KServiceIdentifier()" },
+
+		/* KSERVICEIDENTIFIERREGISTRY */
+		{ "trigger": "KServiceIdentifierRegistry", "contents": "KServiceIdentifierRegistry()" },
+
+
+		/* KTEMPLATE */
+		{ "trigger": "KTemplateFilter::MODE_WRITE", "contents": "KTemplateFilter::MODE_WRITE" },
+		{ "trigger": "KTemplateFilter::MODE_READ", "contents": "KTemplateFilter::MODE_READ" },
+
+		/* KVIEWDEFAULT */
+		{ "trigger": "KViewDefault", "contents": "KViewDefault()" },
+
 		/* TEMPLATE VARS */
+		{ "trigger": "@overlay", "contents": "@overlay(${1:array()})" },
+		{ "trigger": "@date", "contents": "@date(${1:array()})" },
 		{ "trigger": "@template", "contents": "@template(${1:identifier})" },
 		{ "trigger": "@route", "contents": "@route(${1:link})" },
 		{ "trigger": "@helper", "contents": "@helper(${1:identifier})" },
