@@ -46,7 +46,7 @@
 		{ "trigger": "KEvent", "contents": "KEvent(${1:name},${2:array()})" },
 
 		/* KFILTERCHAIN */
-		{ "trigger": "KFilterChain", "contents": "KFilterChai()" },
+		{ "trigger": "KFilterChain", "contents": "KFilterChain()" },
 
 		/* KLOADER */
 		{ "trigger": "KLoader::loadIdentifier", "contents": "KLoader::loadIdentifier(${1:identifier})" },
